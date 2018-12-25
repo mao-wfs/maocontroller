@@ -37,3 +37,12 @@ class CorrelatorHandler(BaseDeviceHandler):
         date_str = f"{now.tm_year}y{now.tm_yday}d{now.tm_hour}h{now.tm_min}m{now.tm_sec - 1}"
         ret = self.com.query(f"ctl_colstop={date_str}")
         return ret
+
+    def set_gigabit_ethernet_ip(self, ip):
+        """Set the IP address of 1G port.
+
+        Args:
+            ip (str): IP address of 1G port.
+        """
+        ret = self.com.query(f"set_gbeip={ip}")
+        return ret
