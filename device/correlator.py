@@ -29,3 +29,11 @@ class CorrelatorHandler(BaseDeviceHandler):
         date_str = f"{now.tm_year}y{now.tm_yday}d{now.tm_hour}h{now.tm_min}m{now.tm_sec - 1}"
         ret = self.com.query(f"ctl_corstart={date_str}:0x10")
         return ret
+
+    def stop(self):
+        """Stop correlation.
+        """
+        now = datetime.now().timetuple()
+        date_str = f"{now.tm_year}y{now.tm_yday}d{now.tm_hour}h{now.tm_min}m{now.tm_sec - 1}"
+        ret = self.com.query(f"ctl_colstop={date_str}")
+        return ret
