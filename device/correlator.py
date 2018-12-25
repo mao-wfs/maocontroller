@@ -23,7 +23,7 @@ class CorrelatorHandler(BaseDeviceHandler):
         pass
 
     def start(self):
-        """Start cross correlation .
+        """Start cross correlation.
         """
         now = datetime.now().timetuple()
         date_str = f"{now.tm_year}y{now.tm_yday}d{now.tm_hour}h{now.tm_min}m{now.tm_sec - 1}"
