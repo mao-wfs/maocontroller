@@ -46,3 +46,12 @@ class CorrelatorHandler(BaseDeviceHandler):
         """
         ret = self.com.query(f"set_gbeip={ip}")
         return ret
+
+    def set_ntp_ip(self, ip):
+        """Set the IP address of NTP server.
+
+        Args:
+            ip (str): IP address of NTP server.
+        """
+        ret = self.com.query(f"set_ntp={ip}")
+        return ret
