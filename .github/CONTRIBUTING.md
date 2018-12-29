@@ -1,10 +1,10 @@
-# Contributing to maocontroller
+# Contributing to maoctrl
 ## Reporting issue
-When reporting issue please include as much detail as possible about your operating system, `maocontroller` version and `Python` version. Whenever possible, please also include a brief, self-contained code example that demonstrates the problem.
+When reporting issue please include as much detail as possible about your operating system, `maoctrl` version and `Python` version. Whenever possible, please also include a brief, self-contained code example that demonstrates the problem.
 
 
 ## Contributing code
-Thanks for your interest in contributing code to `maocontroller`!
+Thanks for your interest in contributing code to `maoctrl`!
 
 When sending pull request please write as much detail as possible.
 
