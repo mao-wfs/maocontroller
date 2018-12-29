@@ -20,7 +20,8 @@ class CorrelatorHandler(BaseDeviceHandler):
     def initialize(self):
         """Initialize the correlator.
         """
-        pass
+        # Clear status
+        self.com.query("show_status")
 
     def start(self):
         """Start cross correlation.
